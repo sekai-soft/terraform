@@ -22,11 +22,3 @@ output "rw_user_secret_key" {
   value = wasabi_access_key.s3-rw-user-access-key.secret
   sensitive = true
 }
-
-output "cdn_url" {
-  value = "https://${var.project}-s3.${module.global.root_domain}"
-}
-
-output "cdn_cname" {
-  value = "${var.project}-s3.${module.global.root_domain}"
-}

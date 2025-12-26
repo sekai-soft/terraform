@@ -3,11 +3,6 @@ variable "project" {
   description = "Project name, used for naming resources"
 }
 
-variable "enable_cdn" {
-  type = bool
-  description = "Whether to enable CDN (and associated CNAME)"
-}
-
 variable "enable_cname" {
   type = bool
   description = "Whether to enable (just) CNAME"

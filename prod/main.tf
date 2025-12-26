@@ -13,7 +13,6 @@ module "mastodon-s3" {
 
   project = "mastodon"
   enable_cname = false
-  enable_cdn = false
 }
 
 module "db-backups-s3" {
@@ -21,5 +20,4 @@ module "db-backups-s3" {
 
   project = "db-backups"
   enable_cname = false
-  enable_cdn = false
 }

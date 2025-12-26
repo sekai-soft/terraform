@@ -17,7 +17,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "k-t-corp"
+    organization = "sekaisoft"
     workspaces {
       name = "terraform"
     }
