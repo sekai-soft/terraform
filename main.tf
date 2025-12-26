@@ -53,8 +53,4 @@ provider "aws" {
 
 module "prod" {
   source = "./prod"
-  providers = {
-    aws = aws
-    aws.usw2 = aws.usw2
-  }
 }

@@ -1,10 +1,12 @@
 variable "wasabi_access_key" {
   type = string
+  description = "This has to be account root user. If you hit 403, try to rotate key first."
 }
 
 variable "wasabi_secret_key" {
   type = string
   sensitive = true
+  description = "This has to be account root user. If you hit 403, try to rotate key first."
 }
 
 variable "cloudflare_api_token" {
