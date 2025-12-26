@@ -10,6 +10,5 @@ variable "enable_cname" {
 
 variable "public_read" {
   type = bool
-  default = true
   description = "Whether to enable public read bucket policy"
 }

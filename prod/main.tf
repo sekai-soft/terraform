@@ -13,6 +13,7 @@ module "mastodon-s3" {
 
   project = "mastodon"
   enable_cname = false
+  public_read = true
 }
 
 module "db-backups-s3" {
@@ -20,4 +21,5 @@ module "db-backups-s3" {
 
   project = "db-backups"
   enable_cname = false
+  public_read = false
 }
